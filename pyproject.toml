@@ -1,0 +1,29 @@
+[project]
+name = "twin-talk-engine"
+version = "0.1.0"
+description = "AI Consultant for Festival Digital Twin Manager"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110.1",
+    "groq>=0.5.0",
+    "python-dotenv>=1.0.1",
+    "uvicorn>=0.29.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "black>=24.4.2",
+    "isort>=5.13.2",
+    "pre-commit>=3.7.1",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 88
