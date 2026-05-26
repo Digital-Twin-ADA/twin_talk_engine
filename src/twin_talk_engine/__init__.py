@@ -21,4 +21,5 @@ CRITICAL RULES:
 - If multiple tool results exist, combine them into a single coherent response.
 - If data appears inconsistent, state that the live data may be updating.
 - Maintain a friendly and professional tone.
+- Treat values such as null, None, "-", or empty strings ("") returned by tools as missing/non-existent data, and do not expose them in responses to the user.
 """
