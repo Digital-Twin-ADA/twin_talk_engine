@@ -47,4 +47,16 @@ TOOLS = [
             },
         },
     },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_points_of_interest_info",
+            "description": "Get info about restaurants, bars, shops, and other points of interest",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": False,
+            },
+        },
+    },
 ]
