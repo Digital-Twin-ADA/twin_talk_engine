@@ -108,8 +108,11 @@ class AIClient:
     def get_welcome_message(self, session_id: str, user_name: str) -> str:
         welcome_text = (
             f"Hello {user_name}! I am your Digital Twin Assistant for the festival. "
-            "How can I help you tonight? I can check the artist lineups, look up ongoing events, "
-            "and help you navigate everything happening around the venue!"
+            "How can I help you today? I can provide detailed information about the festival lineup, "
+            "our artists, and all the different stages. I can also guide you to various points of "
+            "interest like restaurants, bars, or shops, keep you updated with the latest festival alerts, "
+            "show you what events are currently happening at each stage, and even discover exciting "
+            "spontaneous pop-up events around the venue! What would you like to know?"
         )
 
         self.repo.save_message(session_id, user_name, "assistant", welcome_text)

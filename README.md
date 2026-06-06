@@ -25,7 +25,3 @@ Follow these steps to set up your local development environment:
    ```bash
    uv run python main.py
    ```
-   *(Alternatively, run the Uvicorn command directly:)*
-   ```bash
-   uv run uvicorn src.twin_talk_engine.api:app --reload
-   ```

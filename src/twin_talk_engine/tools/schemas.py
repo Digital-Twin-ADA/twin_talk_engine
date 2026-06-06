@@ -59,4 +59,28 @@ TOOLS = [
             },
         },
     },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_current_events_for_each_stage",
+            "description": "Get info about what events are happening at each stage",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": False,
+            },
+        },
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_spontaneous_events",
+            "description": "Get info about spontaneous events. You might want to recommend these events to the user even when they are not explicitly asking about them.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": False,
+            },
+        },
+    },
 ]
